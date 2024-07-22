@@ -1,7 +1,8 @@
 import { useActionState } from 'react'
+import SubmintButton from '../hooks/useFormHook'
 
 const UseStateAction = () => {
-  const [data, formAction] = useActionState(handleSubnmit, {
+  const [data, formAction, pending] = useActionState(handleSubnmit, {
     data: null,
     error: null,
   })
@@ -30,7 +31,7 @@ const UseStateAction = () => {
           />
           <br />
           <br />
-          <button>Submit</button>
+          < SubmintButton/>
         </form>
       </div>
     </>
